@@ -325,6 +325,7 @@ const help = (pushname, prefix, temporizador, uptime, hr, tanggal, groupName, us
 ═══════════════
 ════ 🕴 CRIADOR 🕴
 ╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾
+│•  ${prefix}attp
 │•  ${prefix}clone
 │[  Copia a foto de perfil do alvo  ]
 │•  ${prefix}block
