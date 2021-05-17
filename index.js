@@ -4837,6 +4837,22 @@ console.log(`Error :`, color(e,'red'))
 reply('❌ocorreu um erro❌\n\nTente novamente. ')
 }
 break
+
+case 'attp':
+		    if (!isRegistered) return reply(ind.noregis())
+                    if (args.length == 0) return reply(`Exemplo: ${prefix + command} Manik`)
+                    ini_txt = args.join(" ")
+                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/${command}?apikey=${lolkey}&text=${ini_txt}`)
+                    Manik.sendMessage(from, ini_buffer, sticker, { quoted: Arya})
+                    break
+
+case 'attp':
+		    if (!isRegistered) return reply(ind.noregis())
+                    if (args.length == 0) return reply(`Usage: ${prefix + command} query\nExemplo: ${prefix + command} MrA43G`)
+                    teks = args.join(" ")
+                    buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/attp?apikey=SoftApikey&text=${teks}`)
+                    Manik.sendMessage(from, buffer, sticker, { quoted: Arya})
+                    break
                 
 //GIF
 case 'slap':
